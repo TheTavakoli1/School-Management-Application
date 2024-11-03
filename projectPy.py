@@ -12,7 +12,7 @@ class Application:
         first_name = StringVar()
         last_name = StringVar()
         class_code = StringVar()
-        group = StringVar()
+        group_name = StringVar()
         saz = StringVar()
         master_name = StringVar()
 
@@ -65,10 +65,10 @@ class Application:
         self.class_code_Entry = Entry(right_frame, textvariable=class_code, font=('b yekan', 15, 'bold'), bg='white', fg='#33372C', width=12)
         self.class_code_Entry.place(x=10, y=190)
 
-        self.group_label = Label(right_frame, text='گروه', font=('b yekan', 18, 'bold'), bg='#3F4E4F', fg='#E8DFCA')
-        self.group_label.place(x=280, y=250)
-        self.group_Entry = Entry(right_frame, textvariable=group, font=('b yekan', 15, 'bold'), bg='white', fg='#33372C', width=12)
-        self.group_Entry.place(x=10, y=250)
+        self.group_name_label = Label(right_frame, text='گروه', font=('b yekan', 18, 'bold'), bg='#3F4E4F', fg='#E8DFCA')
+        self.group_name_label.place(x=280, y=250)
+        self.group_name_Entry = Entry(right_frame, textvariable=group_name, font=('b yekan', 15, 'bold'), bg='white', fg='#33372C', width=12)
+        self.group_name_Entry.place(x=10, y=250)
 
         self.saz_label = Label(right_frame, text='ساز', font=('b yekan', 18, 'bold'), bg='#3F4E4F', fg='#E8DFCA')
         self.saz_label.place(x=285, y=315)
@@ -83,11 +83,11 @@ class Application:
         # Buttons
         self.add_btn = Button(right_frame, text="اضافه کنید", bg='#6196A6', fg='white', font=('Lalezar', 15, 'bold'), width=12, height=1,
                               highlightthickness=1, highlightcolor='white', relief=RIDGE)
-        self.add_btn.place(x=20, y=450)
+        self.add_btn.place(x=180, y=450)
 
         self.remove_btn = Button(right_frame, text="حذف کنید", bg='#750E21', fg='white', font=('Lalezar', 15, 'bold'),
                               width=12, height=1, highlightthickness=1, highlightcolor='white', relief=RIDGE)
-        self.remove_btn.place(x=180, y=450)
+        self.remove_btn.place(x=20, y=450)
 
         self.search_btn = Button(right_frame, text="جستجو کنید", bg='#FFB534', fg='white', font=('Lalezar', 15, 'bold'),
                                  width=12, height=1, highlightthickness=1, highlightcolor='white', relief=RIDGE)
@@ -96,6 +96,10 @@ class Application:
         self.update_btn = Button(right_frame, text="به روزرسانی کنید", bg='#6D5D6E', fg='white', font=('Lalezar', 15, 'bold'),
                                  width=12, height=1, highlightthickness=1, highlightcolor='white', relief=RIDGE)
         self.update_btn.place(x=20, y=515)
+
+        self.view_btn = Button(right_frame, text='نمایش کل دانش آموزان', bg="#9A6735",fg='white', font=('Lalezar', 15, 'bold'), width=24, height=1,
+                               highlightthickness=1, highlightcolor='white', relief=RIDGE)
+        self.view_btn.place(x=28, y=580)
 
 
 if __name__ == "__main__":
