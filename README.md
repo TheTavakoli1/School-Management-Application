@@ -1,4 +1,4 @@
-This School Management Application is a simple Python-based tool for storing and managing basic personal information such as ID, first name, last name, and other essential fields.
+**This School Management Application** is a simple Python-based tool for storing and managing basic personal information such as **ID, first name, last name, and other essential fields**.
 
 It is designed for users who need a lightweight solution to handle individual data entries in a structured and user-friendly way.
 
